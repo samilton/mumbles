@@ -5,6 +5,10 @@ It is designed to allow anynoe with a working knowledge of Javascript to
 add functionality. The syntax is designed to resemble the popular web
 framework Sinatra (and its clones like express.js.)
 
+It is written in [CoffeeScript](http://jashkenas.github.com/coffee-script/) and uses
+[Node.js](http://www.nodejs.org).
+
+
 ## Goals of the 1.0
 
   - Configurable
@@ -42,7 +46,7 @@ I had started this project and struggled a little with getting the
 things to correctly daemonize. As I plowed forward on getting the
 initial javascript implementation ported to Coffeescript. 37signals
 released [37signals/pow](http://www.github.com/37signals/pow). This
-really helpped me get a grasp on things and pushed me over the top.
+really helped me get a grasp on things and pushed me over the top.
 This, IMHO, is the real power of open-source.
 
 ## License
