@@ -31,13 +31,25 @@ framework Sinatra (and its clones like express.js.)
   bot.answer("get", function(url) {
   });
 
+## TODO
+
+  - Implement Router [1](https://github.com/samilton/mumbles/issues/1)
+  - Finish Configuration Loading [2](https://github.com/samilton/mumbles/issues/2)
+
+## Special Thanks
+
+I had started this project and struggled a little with getting the
+things to correctly daemonize. As I plowed forward on getting the
+initial javascript implementation ported to Coffeescript. 37signals
+released [37signals/pow](http://www.github.com/37signals/pow). This
+really helpped me get a grasp on things and pushed me over the top.
+This, IMHO, is the real power of open-source.
 
 ## License
 
 (The MIT License)
 
 Copyright (c) 2011 Sam Hamilton
-Copyright (c) 2011 Pragma Securities, LLC
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
