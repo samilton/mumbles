@@ -1,0 +1,29 @@
+{ "name": "mumbles"
+, "description": "Extensible Campfire Bot"
+, "version": "0.1.0"
+, "author": "Sam Hamilton"
+, "repository":
+  { "type": "git"
+  , "url": "http://github.com/samilton/mumbles.git"
+  }
+, "bin": { "pow": "./bin/mumbles" }
+, "main": "./lib/index.js"
+, "dependencies": {
+    "async": "0.1.7"
+  , "coffee-script": ">= 1.0.0"
+  , "connect": ">= 1.0.3"
+  , "log": ">= 1.1.1"
+  , "nack": ">= 0.10.0"
+  }
+, "devDependencies": {
+    "eco": ">= 1.0.0"
+,   "nodeunit": ">= 0.5.0"
+  }
+, "engines" : { "node" : ">=0.4.1" }
+, "scripts": {
+    "install": "node node_modules/coffee-script/bin/cake install"
+,   "test": "node node_modules/coffee-script/bin/cake test"
+,   "start": "node node_modules/coffee-script/bin/cake start"
+,   "stop": "node node_modules/coffee-script/bin/cake stop"
+  }
+}

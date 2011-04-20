@@ -4,7 +4,7 @@ var http = require('http');
 var https = require('https');
 
 /*******************************************************************************
- * need functionality 
+ * need functionality
  * 1. Connect Campfire, join a room
  * 2. Listen to Stream
  * 3. React to messages
@@ -29,7 +29,7 @@ Campfire.prototype.post = function(path, body, callback) {
 };
 
 Campfire.prototype.request = function(method, path, body, callback) {
- var headers = { 
+ var headers = {
     'Authorization' : 'Basic ' + new Buffer(this.token).toString('base64'),
     'host' : this.domain,
     'Content-Type': 'application/json'
@@ -81,7 +81,7 @@ Campfire.prototype.join = function(callback) {
 
 Campfire.prototype.listen = function(callback) {
 
-  var headers = { 
+  var headers = {
     'Authorization': 'Basic ' + new Buffer(this.token).toString('base64'),
     'host' : 'streaming.campfirenow.com',
     'Content-Type': 'application/json'
@@ -111,19 +111,20 @@ Campfire.prototype.listen = function(callback) {
           } catch(e) {}
         }
       }
-      
+
     });
   }).end();
 };
 
-var instance = new Campfire('pragma', 'e7086d411145ceb25dae491dae9c1585142bade6:X');
+/* needs configuration */
+var instance = new Campfire(null,null);
 
 instance.join(function() {
   console.log("joined room");
 });
 
 instance.listen(function(data) {
-  if(data.type == 'TextMessage') {
+  jf(data.type == 'TextMessage') {
     var formumblebot = /mumblebot/.test(data.body);
 
     if(formumblebot) {
