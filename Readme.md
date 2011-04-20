@@ -33,8 +33,8 @@ framework Sinatra (and its clones like express.js.)
 
 ## TODO
 
-  - Implement Router [1](https://github.com/samilton/mumbles/issues/1)
-  - Finish Configuration Loading [2](https://github.com/samilton/mumbles/issues/2)
+  - [Implement Router](https://github.com/samilton/mumbles/issues/1)
+  - [Finish Configuration Loading](https://github.com/samilton/mumbles/issues/2)
 
 ## Special Thanks
 
